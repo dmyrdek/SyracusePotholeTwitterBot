@@ -1,13 +1,5 @@
 import tweepy, time, sys, json, urllib2, datetime, inflect
 
-CONSUMER_KEY = 'q5JuzVFycsjKRw1OV4d0qtzT1'
-CONSUMER_SECRET = '807W1eDYIVnQ1Jukh2yRTB91zE2HKeA1HjQVqXmHoXIG2KhN1K'
-ACCESS_KEY = '916738528054214656-f26w6MCh50w0HcPjyFq0ZuluXxhNohu'
-ACCESS_SECRET = 'ylDau4XgwJ71ugirq87f3RvoifocsAPVPcNHeNRFgJqSQ'
-auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
-auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
-api = tweepy.API(auth)
-
 class Node:
     def __init__(self,initaddress,initdistrict):
         self.address = initaddress
